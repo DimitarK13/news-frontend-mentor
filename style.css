@@ -1,3 +1,72 @@
+:root {
+  --clr-primary-400: hsl(35, 77%, 62%);
+  --clr-primary-600: hsl(5, 85%, 63%);
+
+  --clr-neutral-100: hsl(36, 100%, 99%);
+  --clr-neutral-300: hsl(233, 8%, 79%);
+  --clr-neutral-500: hsl(236, 13%, 42%);
+  --clr-neutral-900: hsl(240, 100%, 5%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+
+  font-size: 0.9375rem;
+  font-family: 'Inter', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img,
+picture,
+svg,
+iframe {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
